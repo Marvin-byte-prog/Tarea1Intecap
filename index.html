@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tarea 2</title>
+  </head>
+  <body>
+    <h1>TAREA 2 INTECAP</h1>
+    <main class="principal">
+        <div class="contenedor">
+            <p>EJERCICIO 1</p>
+            <input type="text" id="palabraInput" placeholder="Ingrese una palabra" /><br>
+            <button onclick="verificarPalindromo()">Verificar</button><br>
+            <h1 id="resultado"></h1>
+        </div>
+        <div class="contenedor">
+          <p>EJERCICIO 2</p>
+          <form id="edades">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="fechaNac">Fecha de nacimiento</label>
+            <input type="date" name="fechaNac" id="fechaNac">
+            <button type="button" onclick="calcularEdad()">Ejecutar</button>
+            <p id="resultado1"></p>
+          </form>
+        </div>
+        <div class="contenedor">
+          <p>EJERCICIO 3</p>
+          <form id="reemplazarLetra">
+            <label for="NombreCompleto">Ingresa tu nombre</label>
+            <input type="text" id="nombre1" name="nombre">
+            <label for="caracter">Ingresa el caracter</label>
+            <input type="text" name="caracter" id="caracter">
+            <button type="button" onclick="reemplazarVocal()">Reemplazar</button>
+            <p id="resultado2"></p>
+          </form>
+        </div>
+        
+    </main>
+    <div class="num-primos">
+      <p>Numeros primos</p>
+      <button type="button" onclick="MostrarPrimos()">Ver Primos</button>
+      <div id="primos"></div>
+    </div>
+  </body>
+</html>
